@@ -1,5 +1,5 @@
 const fetching=(adress)=>{
-    fetch("http://localhost:3000/weather?adress="+adress).then((response)=>{
+    fetch("/weather?adress="+adress).then((response)=>{
     response.json().then((data)=>{
         if (data.error){
             console.log(data.error)
