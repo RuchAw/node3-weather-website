@@ -9,6 +9,8 @@ const app=express()
 
 const port = process.env.PORT || 3000
 
+console.log(process.env.PORT)
+
 //define paths for Express config
 const publicDirectorypath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,"../templates/views")
